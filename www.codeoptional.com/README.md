@@ -2,12 +2,12 @@
 
 ## URLs, generally
 
-Appended `.html` to most names so they'll work with standard nginx `try_files`.
+Appended `.html` to most names so they'll work with standard nginx `try_files`. Assuming this is "enough" for most things.
 
 ## URLs to map specially
 
-- `episodes?format=RSS` (to `episodes.rss`)
-- `?format=RSS` (to `index.rss`)
+- `www.codeoptional.com/episodes?format=RSS` (to `episodes.rss`)
+- `www.codeoptional.com/?format=RSS` (to `index.rss`)
 
 ## URLs ignored
 
