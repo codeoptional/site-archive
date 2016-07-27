@@ -6,9 +6,8 @@ Appended `.html` to most names so they'll work with standard nginx `try_files`.
 
 ## URLs to map specially
 
-- `episodes?format=RSS`
-- `?format=RSS`
-- `index.html?format=RSS`
+- `episodes?format=RSS` (to `episodes.rss`)
+- `?format=RSS` (to `index.rss`)
 
 ## URLs ignored
 
@@ -17,3 +16,5 @@ Remaining files in the archive with `?author=` appended are getting ignored, and
 ## Notes for content adaptation
 
 - Remove author links
+- Most `index.html` references are wget artifacts
+    - including `index.html?format=RSS`
