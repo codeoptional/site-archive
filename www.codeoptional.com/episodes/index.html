@@ -1,0 +1,830 @@
+<!doctype html>
+<html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:website="http://ogp.me/ns/website" lang="en-US" itemscope itemtype="http://schema.org/WebPage" >
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	  
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  
+		<!-- This is Squarespace. --><!-- codeoptional -->
+<base href="">
+<meta charset="utf-8" />
+<title>Code Optional</title>
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+<link rel="canonical" href="http://www.codeoptional.com/"/>
+<meta property="og:site_name" content="Code Optional"/>
+<meta property="og:title" content="Episodes"/>
+<meta property="og:url" content="http://www.codeoptional.com/"/>
+<meta property="og:type" content="website"/>
+<meta itemprop="name" content="Episodes"/>
+<meta itemprop="url" content="http://www.codeoptional.com/"/>
+<meta name="twitter:title" content="Episodes"/>
+<meta name="twitter:url" content="http://www.codeoptional.com/"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="description" content="Three engineering comrades – Andrew Sardone, Kevin Vitale, and Chris 
+Dzombak – talk about development, design, and shipping apps. There’s a 
+heavy slant towards Apple tech, balanced with general inquiries around 
+programming and the intricacies/inanities of software." />
+<script type="text/javascript" src="//use.typekit.net/ik/czvAhcBVqyz_86FdjWdBgI6wUl-gJIsOzgMt4O6jWmbfezCffFHN4UJLFRbh52jhWD9DjRJUjRwUZQsKwejhF2mcjDwujDSUwU7wMPG0jhNqZAN3ie8zdcBCO1FUiABkZWF3jAF8OcFzdPURdhs8dagX-AN0jA30jhNlOeFzZemzSYsTdhoydfoDSWmyScmDSeBRZPoRdhXCdeNRjAUGdaFXOYiaikoRdhs8dagX-AN0jA30jhNlOYiaikoRdhs8dagX-AN0jA30SaBujW48Sagyjh90jhNlJ6U3ScNt-AuyOAozicI7fbKnMsMMeMI6MKG4fH3gIMMjfkMfH6qJtKGbMg62JMJ7fbRRHyMMeMX6MKG4fHvgIMMjgfMfH6qJCMIbMg65JMJ7f6K3UMIbMg6BJMJ7f6KUUMIbMg6VJMJ7fbKlMsMMeMj6MKG4fHtgIMMjIfMfH6qJK3IbMg6YJMJ7fbKwMsMMegI6MKG4fHqgIMMjffMfH6qJ76IbMg6PJMJ7fbK4MsMMeMq6MKG4fJGgIMMjIkMfqMe-y_cvgb.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Cabin:normal,normalitalic,700normal,700italic"/>
+<script type="text/javascript">SQUARESPACE_ROLLUPS = {};</script>
+<script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//static.squarespace.com/universal/scripts-compressed/common-656372fca0f2343af016-min.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-common');</script>
+<script type="text/javascript" data-sqs-type="dynamic-assets-loader">(function() {(function(a){function e(b){-1!==b.indexOf(".js")?document.write("<script "+f+'crossorigin="anonymous" src="'+b+'">\x3c/script>'):document.write('<link rel="stylesheet" type="text/css" href="'+b+'" />')}var g=function(){var b=window.location.search,a=b.indexOf("exclude=");return-1<a&&(b=b.substr(a+8).split("&")[0])?b.split(","):[]}(),f;f=window.__beta_flag_should_defer?'defer="defer" ':"";try{if(window.top!=window&&window.top.Squarespace&&window.top.Squarespace.frameAvailable){window.top.Squarespace.frameAvailable(window,
+SQUARESPACE_ROLLUPS);return}}catch(h){console.error(h)}for(var c in a)if(!(-1<g.indexOf(c))){if(a[c].js)for(var d=0;d<a[c].js.length;d++)e(a[c].js[d]);if(a[c].css)for(d=0;d<a[c].css.length;d++)e(a[c].css[d])}})(SQUARESPACE_ROLLUPS);
+})();</script><script type="text/javascript" data-sqs-type="imageloader">(function() {var EXCLUDED_SIZES=function(){var a=window.location.search,b=a.indexOf("exclude_imageloader_sizes=");return-1<b&&(a=a.substr(b+26).split("&")[0])?a.split(",").map(function(a){return parseInt(a,10)}):[]}(),SQUARESPACE_SIZES=[2500,1500,1E3,750,500,300,100].filter(function(a){return-1===EXCLUDED_SIZES.indexOf(a)}),IMAGE_LOADING_CLASS="loading",ImageLoader=new function(){this.load=function(a,b){function d(a,b,c){var d=new Image;d.onload=b;d.onerror=c;d.src=a}a.getDOMNode&&(a=a.getDOMNode());var c=this._getDataFromNode(a,
+b),e=!(!c.dimensions||!c.dimensions.width||!c.dimensions.height),g=c.load+"";if("false"===g)return!1;var h=c.mode;if(e&&("fit"===h||"fill"===h)){h=a.parentNode;if(!h)return console.error("Not doing anything, parentNode not found."),!1;if(!this.refresh(a,b,h))return!1}var n=this._intendToLoad(a,c);if("string"===typeof n&&"viewport"!==g){var m=this.getUrl(n,c),g=a.getAttribute("data-image-resolution");a.getAttribute("src")!==m&&this.isValidResolution(n,g)&&(a.onload=function(){a.className=a.className.replace(IMAGE_LOADING_CLASS,
+" ").trim();a.setAttribute("data-image-resolution",n)},!a.getAttribute("src")&&-1===a.className.indexOf(IMAGE_LOADING_CLASS)&&(a.className+=(a.className?" ":"")+IMAGE_LOADING_CLASS),!a.getAttribute("src")&&e?(a.setAttribute("src",m),c.useBgImage&&(a.parentNode.style.backgroundImage="url("+m+")")):d(m,function(){e?a.setAttribute("src",m):(a.setAttribute("data-image-dimensions",this.width+"x"+this.height),ImageLoader.load(a,b))},function(){a.className=a.className.replace(IMAGE_LOADING_CLASS," ").trim();
+a.setAttribute("src",m)}));return!0}return n};this.refresh=function(a,b,d){a.getDOMNode&&(a=a.getDOMNode());d&&d.getDOMNode&&(d=d.getDOMNode());d=d||a.parentNode;if(!d)return console.error("Not doing anything, parentNode not found."),!1;var c=this._getDataFromNode(a,b),e=d.offsetWidth,g=d.offsetHeight;b=c.mode;if("none"!==b){var h=c.dimensions.width,n=c.dimensions.height,m=h/n,q=e/g;if(c.useBgImage&&"fill"===b&&"backgroundSize"in document.documentElement.style)return a.style.display="none",d.style.backgroundSize=
+"cover",d.style.backgroundPosition=100*c.focalPoint.x+"% "+100*c.focalPoint.y+"%",!0;if(c.fixedRatio)"fill"==b&&q>m||"fit"==b&&q<m?(k=100,l=100*(q/m),r=(100-l)*c.focalPoint.y,p=0):(k=100*(m/q),l=100,r=0,p=(100-k)*c.focalPoint.x),a.style.top=r+"%",a.style.left=p+"%",a.style.width=k+"%",a.style.height=l+"%";else{var f;"fill"===b?f=m>q?g/n:e/h:"fit"===b&&(f=m<q?g/n:e/h);!c.stretch&&"fit"==b&&1<f&&(f=1);var k=Math.ceil(h*f),l=Math.ceil(n*f);if(0===k||0===l)return!1;var p,r;"fill"===b?(p=Math.min(Math.max(e/
+2-k*c.focalPoint.x,e-k),0),r=Math.min(Math.max(g/2-l*c.focalPoint.y,g-l),0)):"fit"===b&&(f=c.fitAlignment,p=f.left?0:f.right?e-k:k<e?(e-k)/2:0,r=f.top?0:f.bottom?g-l:l<g?(g-l)/2:0,"inline"==this._getStyle(a,"display")&&(a.style.fontSize="0px"),this._resetAlt(a,function(){k-=a.offsetHeight-a.clientHeight;l-=a.offsetWidth-a.clientWidth}));a.style.top=Math.ceil(r)+"px";a.style.left=Math.ceil(p)+"px";a.style.width=Math.ceil(k)+"px";a.style.height=Math.ceil(l)+"px"}p=this._getStyle(d,"position");a.style.position=
+"relative"==p?"absolute":"relative";if("fill"==b&&(b=this._getStyle(d,"overflow"),!b||"hidden"!=b))d.style.overflow="hidden";return!0}};this._intendToLoad=function(a,b){function d(c,d){"none"===b.mode&&(a.style.width=null,a.style.height=null);var e=parseFloat(a.getAttribute(c)),f=parseFloat(e);if(!f||isNaN(f))e=h._getStyle(a,c),f=parseFloat(e);if(!f||isNaN(f))e=h._getStyle(a,"max-"+c,"max"+(c.substr(0,1).toUpperCase()+c.substr(1))),f=parseFloat(e);if(0===d||e)switch(h._stringType(e)){case "percentage":d=
+parseInt(e,10)/100*g["offset"+c.substr(0,1).toUpperCase()+c.substr(1)];break;case "number":d=parseInt(e,10)}!f&&0!==d&&!a.getAttribute("src")&&(d=0);return d}b=b||this._getDataFromNode(a);if(!b.source)return!1;var c=a.offsetWidth,e=a.offsetHeight,g=a.parentNode,h=this;this._resetAlt(a,function(){c=d("width",c);e=d("height",e)});0===c&&0===e?(c=b.dimensions.width,e=b.dimensions.height):0===c?c=this.getDimensionForValue("width",e,b):0===e&&(e=this.getDimensionForValue("height",c,b));"viewport"===b.load&&
+(a.style.width=Math.floor(c)+"px",a.style.height=Math.floor(e)+"px");return this.getSquarespaceSize(c,e,b)};this._getDataFromNode=function(a,b){b=b||{};var d={focalPoint:{x:0.5,y:0.5},dimensions:{width:null,height:null},mode:"none",fitAlignment:{center:!0},load:"true",stretch:!0,fixedRatio:!1};if(b.focalPoint)d.focalPoint=b.focalPoint;else{var c=a.getAttribute("data-image-focal-point");if(c&&(c=c.split(","))&&2==c.length)d.focalPoint={x:parseFloat(c[0]),y:parseFloat(c[1])}}if(b.dimensions)d.dimensions=
+b.dimensions;else if((c=a.getAttribute("data-image-dimensions"))&&(c=c.split("x"))&&2==c.length)d.dimensions={width:parseInt(c[0],10),height:parseInt(c[1],10)};b.mode?d.mode=b.mode:a.parentNode&&(c=a.parentNode.className,-1!==c.indexOf("content-fill")?d.mode="fill":-1!==c.indexOf("content-fit")&&(d.mode="fit"));if("fit"===d.mode&&a.parentNode&&(c=b.fitAlignment||a.getAttribute("data-alignment")||a.parentNode.getAttribute("data-alignment")))d.fitAlignment={top:-1!==c.indexOf("top"),left:-1!==c.indexOf("left"),
+center:-1!==c.indexOf("center"),right:-1!==c.indexOf("right"),bottom:-1!==c.indexOf("bottom")};b.load?d.load=b.load:(c=a.getAttribute("data-load"))&&(d.load=c);if("undefined"!==typeof b.stretch)d.stretch=b.stretch;else if(c=a.getAttribute("data-image-stretch"))d.stretch="true"===c?!0:!1;d.source=b.source?b.source:a.getAttribute("data-src");d.source&&this.isSquarespaceUrl(d.source)&&("http:"===d.source.substr(0,5)&&"https"===window.location.protocol.substr(0,5))&&(d.source=d.source.replace("http://",
+"https://"));if(b.fixedRatio)d.fixedRatio=b.fixedRatio;else if(c=a.getAttribute("data-fixed-ratio"))d.fixedRatio="true"==c;b.useBgImage?d.useBgImage=b.useBgImage:(c=a.getAttribute("data-use-bg-image"),d.useBgImage="true"===c||!0===c?!0:!1);return d};this._stringType=function(a){return"string"===typeof a&&-1!==a.indexOf("%")?"percentage":isNaN(parseInt(a,10))?NaN:"number"};this._getStyle=function(a,b,d){var c;a.currentStyle?c=a.currentStyle[d||b]:window.getComputedStyle&&(c=document.defaultView.getComputedStyle(a,
+null).getPropertyValue(b));return c};this._isVisible=function(a){a=a.getBoundingClientRect();return 0<=a.left&&0<=a.top||0<=a.bottom&&0<=a.right||0<=a.left&&0<=a.bottom||0<=a.right&&0<=a.top};this.getSquarespaceSize=function(a,b,d){a=Math.max(b/(d.dimensions.height/d.dimensions.width),a);"undefined"===typeof app&&"number"===typeof window.devicePixelRatio&&(a*=window.devicePixelRatio);for(b=1;b<SQUARESPACE_SIZES.length&&!(a>SQUARESPACE_SIZES[b]);b++);return SQUARESPACE_SIZES[b-1]+"w"};this.getDimensionForValue=
+function(a,b,d){var c=d.dimensions.width;d=d.dimensions.height;return"width"==a?c/d*b:"height"==a?d/c*b:NaN};this.getUrl=function(a,b){var d=b.source;return a&&("/"==d[0]||this.isSquarespaceUrl(d))?(-1===d.indexOf("format="+a)&&(d=d+(-1!==d.indexOf("?")?"&":"?")+"format="+a),d):b.source};this.isSquarespaceUrl=function(a){return-1!==a.indexOf("squarespace.com")||-1!==a.indexOf("squarespace.net")||-1!==a.indexOf("sqsp.net")};this.isValidResolution=function(a,b){a=parseInt(a,10);b=parseInt(b,10);return isNaN(a)||
+isNaN(b)?!0:a>b};this._resetAlt=function(a,b){var d=a.getAttribute("alt"),c=d&&0<d.length&&!a.getAttribute("src");if(c){var e=a.style.display;a.removeAttribute("alt");a.style.display="none";a.offsetHeight+0;a.style.display=e}b.call(this);c&&a.setAttribute("alt",d)};this.bootstrap=function(){var a=document.images;if(0<a.length)for(var b=0,d=a.length;b<d;b++)((a[b].hasAttribute?a[b].hasAttribute("data-image"):a[b].attributes["data-image"])||(a[b].hasAttribute?a[b].hasAttribute("data-src"):a[b].attributes["data-src"]))&&
+"false"!==(a[b].getAttribute?a[b].getAttribute("data-load"):a[b].attributes["data-load"])+""&&ImageLoader.load(a[b])}};window.ImageLoader=ImageLoader;window.YUI&&YUI.add("squarespace-imageloader",function(a){},"MY FATHER WAS A ROBOT, BUT HIS FATHER WAS A HUMAN",{requires:[]});
+})();</script>
+<script>Static.SQUARESPACE_CONTEXT = {"facebookAppId":"314192535267336","rollups":{"squarespace-announcement-bar":{"css":"//static.squarespace.com/universal/styles-compressed/announcement-bar-d41d8cd98f00b204e9800998ecf8427e-min.css","js":"//static.squarespace.com/universal/scripts-compressed/announcement-bar-decbf723e5cf704a76a7-min.js"},"squarespace-audio-player":{"css":"//static.squarespace.com/universal/styles-compressed/audio-player-76e4bfcc3f9830beb388bae2002fbe6c-min.css","js":"//static.squarespace.com/universal/scripts-compressed/audio-player-6e62e8c024ba2d4c3e7e-min.js"},"squarespace-blog-collection-list":{"css":"//static.squarespace.com/universal/styles-compressed/blog-collection-list-d41d8cd98f00b204e9800998ecf8427e-min.css","js":"//static.squarespace.com/universal/scripts-compressed/blog-collection-list-4a7f7bb6567b9729beae-min.js"},"squarespace-calendar-block-renderer":{"css":"//static.squarespace.com/universal/styles-compressed/calendar-block-renderer-edb9ea58c015fca447b97a2948a5c589-min.css","js":"//static.squarespace.com/universal/scripts-compressed/calendar-block-renderer-d31f23ca9e64b0a435f3-min.js"},"squarespace-chartjs-helpers":{"css":"//static.squarespace.com/universal/styles-compressed/chartjs-helpers-9935a41d63cf08ca108505d288c1712e-min.css","js":"//static.squarespace.com/universal/scripts-compressed/chartjs-helpers-bd6ba2fa1a7d6018f5a0-min.js"},"squarespace-comments":{"css":"//static.squarespace.com/universal/styles-compressed/comments-45d37f42f52b197cf397e3b95c6b8328-min.css","js":"//static.squarespace.com/universal/scripts-compressed/comments-695fd40c6961b6d58053-min.js"},"squarespace-dialog":{"css":"//static.squarespace.com/universal/styles-compressed/dialog-be200ed7f5c57483743a18984283b649-min.css","js":"//static.squarespace.com/universal/scripts-compressed/dialog-87ddf3f23b2ee485ce43-min.js"},"squarespace-events-collection":{"css":"//static.squarespace.com/universal/styles-compressed/events-collection-edb9ea58c015fca447b97a2948a5c589-min.css","js":"//static.squarespace.com/universal/scripts-compressed/events-collection-e4aa0f996e619665da69-min.js"},"squarespace-gallery-collection-list":{"css":"//static.squarespace.com/universal/styles-compressed/gallery-collection-list-d41d8cd98f00b204e9800998ecf8427e-min.css","js":"//static.squarespace.com/universal/scripts-compressed/gallery-collection-list-93c58b772125ce77792b-min.js"},"squarespace-image-zoom":{"css":"//static.squarespace.com/universal/styles-compressed/image-zoom-ae974921915aeccaff8ad60c60e19c31-min.css","js":"//static.squarespace.com/universal/scripts-compressed/image-zoom-8660d5f2b55f383ef29a-min.js"},"squarespace-pinterest":{"css":"//static.squarespace.com/universal/styles-compressed/pinterest-d41d8cd98f00b204e9800998ecf8427e-min.css","js":"//static.squarespace.com/universal/scripts-compressed/pinterest-9074fa3c1cfe2ad5cf3e-min.js"},"squarespace-product-quick-view":{"css":"//static.squarespace.com/universal/styles-compressed/product-quick-view-eb4b900ac0155bed2f175aa82e2a7c17-min.css","js":"//static.squarespace.com/universal/scripts-compressed/product-quick-view-555103e326821c0dea35-min.js"},"squarespace-products-collection-item-v2":{"css":"//static.squarespace.com/universal/styles-compressed/products-collection-item-v2-ae974921915aeccaff8ad60c60e19c31-min.css","js":"//static.squarespace.com/universal/scripts-compressed/products-collection-item-v2-b35eedafff7b695cfa21-min.js"},"squarespace-products-collection-list-v2":{"css":"//static.squarespace.com/universal/styles-compressed/products-collection-list-v2-ae974921915aeccaff8ad60c60e19c31-min.css","js":"//static.squarespace.com/universal/scripts-compressed/products-collection-list-v2-56dc7ee5778048fdbc3e-min.js"},"squarespace-search-page":{"css":"//static.squarespace.com/universal/styles-compressed/search-page-9e3daa07ec7490c2f0be98a39351cb63-min.css","js":"//static.squarespace.com/universal/scripts-compressed/search-page-60eef66033f27b3b8bf4-min.js"},"squarespace-share-buttons":{"js":"//static.squarespace.com/universal/scripts-compressed/share-buttons-0ffdf2ba183ca296f6fe-min.js"},"squarespace-simple-liking":{"css":"//static.squarespace.com/universal/styles-compressed/simple-liking-09fa291ec2800c97714f0d157fd0a6ca-min.css","js":"//static.squarespace.com/universal/scripts-compressed/simple-liking-3c675338ce60dc29a3e7-min.js"},"squarespace-social-buttons":{"css":"//static.squarespace.com/universal/styles-compressed/social-buttons-7a696232d1cd101fd62b5f174f9ae6ff-min.css","js":"//static.squarespace.com/universal/scripts-compressed/social-buttons-e4c17919822a51f2de3d-min.js"},"squarespace-tourdates":{"css":"//static.squarespace.com/universal/styles-compressed/tourdates-d41d8cd98f00b204e9800998ecf8427e-min.css","js":"//static.squarespace.com/universal/scripts-compressed/tourdates-56dfeff77f4534045ec4-min.js"}},"pageType":1,"website":{"id":"53b21b31e4b0f645fc35c713","identifier":"codeoptional","websiteType":1,"contentModifiedOn":1415020971783,"cloneable":false,"siteStatus":{},"language":"en-US","timeZone":"America/New_York","machineTimeZoneOffset":-14400000,"timeZoneOffset":-14400000,"timeZoneAbbr":"EDT","siteTitle":"Code Optional","siteTagLine":"A podcast about the trials and tribulations of building software.","siteDescription":"<p>Three engineering comrades \u2013&nbsp;<a href=\"https://twitter.com/andrewa2\">Andrew Sardone</a>, <a href=\"https://twitter.com/vitalekj/\">Kevin Vitale</a>, and <a href=\"https://twitter.com/cdzombak/\">Chris Dzombak</a>&nbsp;\u2013 talk about development, design, and shipping apps. There\u2019s a heavy slant towards Apple tech, balanced with general inquiries around programming and the intricacies/inanities&nbsp;of software.</p>","location":{"mapZoom":12.0,"mapLat":40.7207559,"mapLng":-74.0007613},"shareButtonOptions":{"3":true,"8":true,"6":true,"2":true,"1":true},"authenticUrl":"http://www.codeoptional.com","internalUrl":"http://codeoptional.squarespace.com","baseUrl":"http://www.codeoptional.com","primaryDomain":"www.codeoptional.com","socialAccounts":[{"serviceId":4,"userId":"2606242748","userName":"codeoptional","screenname":"Code Optional","addedOn":1404599334510,"profileUrl":"https://twitter.com/codeoptional","iconUrl":"http://pbs.twimg.com/profile_images/485550085627867137/WFl_knOe_normal.png","collectionId":"53b87c26e4b079c1947f354b","iconEnabled":true,"serviceName":"twitter"}],"typekitId":"","statsMigrated":false,"imageMetadataProcessingEnabled":false},"websiteSettings":{"id":"53b21b31e4b0f645fc35c714","websiteId":"53b21b31e4b0f645fc35c713","type":"Personal","subjects":[{"systemSubject":"tech"}],"country":"US","state":"NY","markdownMode":true,"simpleLikingEnabled":true,"mobileInfoBarSettings":{"isContactEmailEnabled":false,"isContactPhoneNumberEnabled":false,"isLocationEnabled":false,"isBusinessHoursEnabled":false},"lastAgreedTermsOfService":2,"defaultPostFormat":"%y/%m/%d/%t","commentLikesAllowed":true,"commentAnonAllowed":true,"commentThreaded":true,"commentApprovalRequired":false,"commentAvatarsOn":true,"commentSortType":2,"commentFlagThreshold":0,"commentFlagsAllowed":true,"commentEnableByDefault":true,"commentDisableAfterDaysDefault":0,"disqusShortname":"","homepageTitleFormat":"%s","collectionTitleFormat":"%c \u2014 %s","itemTitleFormat":"%i \u2014 %s","commentsEnabled":false,"allowSquarespacePromotion":true,"storeSettings":{"returnPolicy":null,"termsOfService":null,"privacyPolicy":null,"paymentSettings":{},"expressCheckout":false,"useLightCart":false,"showNoteField":false,"currenciesSupported":["USD"],"defaultCurrency":"USD","selectedCurrency":"USD","measurementStandard":1,"orderConfirmationInjectCode":"","showCustomCheckoutForm":false,"enableMailingListOptInByDefault":true,"sameAsRetailLocation":false,"stripeConnected":false,"isLive":false,"storeState":3},"useEscapeKeyToLogin":true,"ssBadgeType":1,"ssBadgePosition":4,"ssBadgeVisibility":1,"ssBadgeDevices":1,"pinterestOverlayOptions":{"mode":"disabled","size":"small","shape":"rect","color":"white"},"ampEnabled":false},"websiteCloneable":false,"collection":{"title":"Episodes","id":"53b21e6de4b03e6e240441cb","fullUrl":"/","type":1},"subscribed":false,"appDomain":"squarespace.com","templateTweakable":true,"tweakJSON":{"aspect-ratio":"Auto","gallery-arrow-style":"Circular","gallery-aspect-ratio":"3:2 Standard","gallery-auto-crop":"true","gallery-autoplay":"false","gallery-design":"Grid","gallery-info-overlay":"Show on Hover","gallery-loop":"true","gallery-navigation":"Circles","gallery-show-arrows":"true","gallery-transitions":"Fade","galleryArrowBackground":"rgba(34,34,34,1)","galleryArrowColor":"rgba(255,255,255,1)","galleryAutoplaySpeed":"3","galleryCircleColor":"rgba(255,255,255,1)","galleryInfoBackground":"rgba(0, 0, 0, .7)","galleryThumbnailSize":"100px","gridSize":"320px","gridSpacing":"20px","product-gallery-auto-crop":"true","product-image-auto-crop":"true"},"templateId":"4f6a1392e4b07090d46e7ec9","pageFeatures":[1,2,4],"impersonatedSession":false,"demoCollections":[{"collectionId":"527d3781e4b05acc5f1bb99c","deleted":true},{"collectionId":"527d37a8e4b080fe1829dc73","deleted":true},{"collectionId":"527d37a1e4b080fe1829dc66","deleted":true}],"isFacebookTab":false,"tzData":{"zones":[[-300,"US","E%sT",null]],"rules":{"US":[[1967,2006,null,"Oct","lastSun","2:00","0","S"],[1987,2006,null,"Apr","Sun>=1","2:00","1:00","D"],[2007,"max",null,"Mar","Sun>=8","2:00","1:00","D"],[2007,"max",null,"Nov","Sun>=1","2:00","0","S"]]}}};</script><script type="text/javascript"> SquarespaceFonts.loadViaContext(); Squarespace.load(window);</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="http://www.codeoptional.com/episodes?format=RSS" />
+<!--[if gte IE 9]> <link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/53b21b31e4b0f645fc35c713/4/4f6a1392e4b07090d46e7ec9/53b21b31e4b0f645fc35c717/1562-05142015/1468941209515/site.css?&filterFeatures=false&part=1"/><link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/53b21b31e4b0f645fc35c713/4/4f6a1392e4b07090d46e7ec9/53b21b31e4b0f645fc35c717/1562-05142015/1468941209515/site.css?&filterFeatures=false&part=2"/><link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/53b21b31e4b0f645fc35c713/4/4f6a1392e4b07090d46e7ec9/53b21b31e4b0f645fc35c717/1562-05142015/1468941209515/site.css?&filterFeatures=false&part=3"/><link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/53b21b31e4b0f645fc35c713/4/4f6a1392e4b07090d46e7ec9/53b21b31e4b0f645fc35c717/1562-05142015/1468941209515/site.css?&filterFeatures=false&part=4"/><![endif]-->
+<!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/53b21b31e4b0f645fc35c713/4/4f6a1392e4b07090d46e7ec9/53b21b31e4b0f645fc35c717/1562-05142015/1468941209515/site.css?&filterFeatures=false&noMedia=true&part=1"/><link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/53b21b31e4b0f645fc35c713/4/4f6a1392e4b07090d46e7ec9/53b21b31e4b0f645fc35c717/1562-05142015/1468941209515/site.css?&filterFeatures=false&noMedia=true&part=2"/><link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/53b21b31e4b0f645fc35c713/4/4f6a1392e4b07090d46e7ec9/53b21b31e4b0f645fc35c717/1562-05142015/1468941209515/site.css?&filterFeatures=false&noMedia=true&part=3"/><link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/53b21b31e4b0f645fc35c713/4/4f6a1392e4b07090d46e7ec9/53b21b31e4b0f645fc35c717/1562-05142015/1468941209515/site.css?&filterFeatures=false&noMedia=true&part=4"/><![endif]-->
+<!--[if !IE]> --><link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/53b21b31e4b0f645fc35c713/4/4f6a1392e4b07090d46e7ec9/53b21b31e4b0f645fc35c717/1562-05142015/1468941209515/site.css?&filterFeatures=false"/><!-- <![endif]-->
+<style type="text/css">
+  .site-description a, .entry-content a {
+    text-decoration: underline;
+  }
+</style><script type="text/javascript"> var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-52493284-1']); _gaq.push(['_trackPageview']); (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script><!-- End of Squarespace Headers -->
+
+	</head>
+	
+	<body class="underline-body-links blog-meta-data-split  hide-author   social-icon-style-round  show-products-category-navigation  gallery-design-grid aspect-ratio-auto lightbox-style-light gallery-navigation-circles gallery-info-overlay-show-on-hover gallery-aspect-ratio-32-standard gallery-arrow-style-circular gallery-transitions-fade gallery-show-arrows gallery-auto-crop  gallery-loop product-list-titles-under product-list-alignment-center product-item-size-11-square product-image-auto-crop product-gallery-size-11-square product-gallery-auto-crop show-product-price show-product-item-nav product-social-sharing   event-thumbnails event-thumbnail-size-32-standard event-date-label event-date-label-time event-list-show-cats event-list-date event-list-time event-list-address   event-icalgcal-links  event-excerpts  event-item-back-link      opentable-style-light newsletter-style-dark small-button-style-solid small-button-shape-square medium-button-style-solid medium-button-shape-square large-button-style-solid large-button-shape-square button-style-outline button-corner-style-rounded tweak-product-quick-view-button-style-floating tweak-product-quick-view-button-position-bottom tweak-product-quick-view-lightbox-excerpt-display-truncate tweak-product-quick-view-lightbox-show-arrows tweak-product-quick-view-lightbox-show-close-button tweak-product-quick-view-lightbox-controls-weight-light native-currency-code-usd collection-type-blog collection-layout-default collection-53b21e6de4b03e6e240441cb homepage view-list mobile-style-available" id="collection-53b21e6de4b03e6e240441cb">
+
+	<div id="site">
+		<div id="canvas">
+
+			<div id="headerWrapper">
+				<header id="header">
+
+					<div id="headerInfo">
+						
+						<h1 class="logo site-title">
+							<a href="/" title="Code Optional" role="bookmark" data-content-field="site-title">
+							  <span class="placed-site-title">Code Optional</span>
+							</a>
+						</h1>
+						<p class="site-tagline" data-content-field="site-tagline">A podcast about the trials and tribulations of building software.</p>
+		      	<script>
+			        Y.use('squarespace-ui-base', function(Y) {
+			          	Y.one("h1.logo").plug(Y.Squarespace.TextShrink, {
+			            	parentEl: Y.one('#header'),
+			            	minFontSize: 16
+			          	});
+			          	if (Y.one('p.site-tagline')){
+				          	Y.one("p.site-tagline").plug(Y.Squarespace.TextShrink, {
+				            	parentEl: Y.one('#header'),
+				            	minFontSize: 12
+				          	});
+				          }
+			        });
+		      	</script>
+						
+						<div class="site-description" data-content-field="site-description"><p>Three engineering comrades –&nbsp;<a href="https://twitter.com/andrewa2">Andrew Sardone</a>, <a href="https://twitter.com/vitalekj/">Kevin Vitale</a>, and <a href="https://twitter.com/cdzombak/">Chris Dzombak</a>&nbsp;– talk about development, design, and shipping apps. There’s a heavy slant towards Apple tech, balanced with general inquiries around programming and the intricacies/inanities&nbsp;of software.</p></div>
+						
+						
+						<div id="navBlock" role="navigation">
+							
+<nav class="main-nav" data-content-field="navigation">
+
+  <ul>
+  
+    
+      
+        <li class="blog-collection active-link">
+          <a href="/">Episodes</a>
+        </li>
+      
+      
+    
+  
+    
+      
+        <li class="page-collection">
+          <a href="/about/">About</a>
+        </li>
+      
+      
+    
+  
+  </ul>
+
+  <select id="mobileSelect" name="mobileSelect">
+    <option class="mobile-select-label" value="">Navigation</option>
+    
+      
+        
+          <option class="blog-collection" value="/" selected="selected">Episodes</option>
+        
+        
+      
+    
+      
+        
+          <option class="page-collection" value="/about/">About</option>
+        
+        
+      
+    
+  </select>
+
+</nav>
+
+
+					  </div>
+
+						<!-- CATEGORY NAV -->
+						
+
+					</div>
+
+				</header>
+			</div><!-- / headerWrapper -->
+
+			<div id="pageWrapper" class="hfeed" role="main">
+				<section id="page" data-content-field="main-content">
+					<article class="hentry author-andrew-sardone post-type-text article-index-1" id="article-544d5590e4b0023e704b37e2" data-item-id="544d5590e4b0023e704b37e2">
+    <div class="content-wrapper">
+
+    <!--SPECIAL CONTENT-->
+      
+
+        
+
+      
+
+      <div class="post">
+
+        <!--POST HEADER-->
+  			<header>
+  				<h1 class="entry-title" data-content-field="title" itemprop="headline"><a href="/episodes/2014/10/26/7-our-first-ever-guest-designing-remotely">7: Our first ever guest, designing remotely</a></h1>
+
+          <div class="article-meta-top">
+            <div class="location"></div>
+            <span class="date"><a href="/episodes/2014/10/26/7-our-first-ever-guest-designing-remotely"><time class="published" datetime="2014-10-27" itemprop="datePublished">October 27, 2014</time></a></span>
+             <span class="author"><a href="/?author=53b2a03fe4b0dc3e7be767bf" rel="author">by Andrew Sardone</a></span>
+            
+          </div>
+
+
+  			</header>
+
+        <!--POST BODY-->
+
+        
+
+        <div class="body entry-content"><div class="sqs-layout sqs-grid-12 columns-12" data-layout-label="Post Body" data-type="item" data-updated-on="1414411645443" id="item-544d5590e4b0023e704b37e2"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block markdown-block sqs-block-markdown" data-block-type="44" id="block-3c36e033291c961f8635"><div class="sqs-block-content"><p>While Kevin takes the afternoon off for some well-deserved <a href="http://f.cl.ly/items/102B2e3s1i3y2s011G2l/baby%20&amp;%20bunny.jpeg">family and petting zoo time</a>, we’re joined by our guest <a href="http://karstenrowe.com">Karsten Rowe</a>. Karsten is a UK-based designer, and together with Andrew and Chris he chats about remote work, jumping from graphic to product design, and how one grows and becomes inspired.</p>
+
+<p><em>Note:</em> Andrew apologizes for the episode’s poor audio quality. This is the first episode we’ve recorded in-person.</p></div></div><div class="sqs-block audio-block sqs-block-audio" data-block-type="41" id="block-yui_3_17_2_1_1414354227372_22387"><div class="sqs-block-content"><div class="sqs-audio-embed"
+     data-url="http://static1.squarespace.com/static/53b21b31e4b0f645fc35c713/t/544e372be4b0714dbccca28d/1414412075031/codeoptional007.mp3/original/codeoptional007.mp3"
+     data-mime-type=""
+     data-title="7: Our first ever guest, designing remotely"
+     data-author="Code Optional"
+     data-show-download="true"
+     data-design-style="minimal"
+     data-duration-in-ms="2499000"
+     data-color-theme="dark">
+</div>
+</div></div><div class="sqs-block markdown-block sqs-block-markdown" data-block-type="44" id="block-yui_3_17_2_1_1414354227372_21224"><div class="sqs-block-content"><h2 id="shownotes">Show notes</h2>
+
+<ul>
+<li>Guest <a href="http://karstenrowe.com/">Karsten Rowe</a> is the design lead at <a href="http://nutshell.com">Nutshell</a>, a simple and powerful cloud-based CRM</li>
+<li>Tools for remote work
+<ul><li><a href="http://github.com">GitHub</a></li>
+<li><a href="http://trello.com">Trello</a></li>
+<li><a href="http://hipchat.com">HipChat</a></li>
+<li><a href="http://copy.com">Copy</a></li></ul></li>
+<li>A look at some of <a href="">Jony Ive’s pre-Apple work</a></li>
+<li>Steve Jobs on <a href="http://youtu.be/UvEiSa6_EPA">crafting the world around you</a></li>
+<li><a href="http://twojames.com/">Two James Spirits</a> – a Detroit-based artisan distillery</li>
+</ul>
+
+<h3 id="findusonline">Find us online</h3>
+
+<ul>
+<li>Andrew Sardone: <a href="https://twitter.com/andrewa2">@andrewa2</a> / <a href="http://andrewsardone.com">andrewsardone.com</a></li>
+<li>Kevin Vitale: <a href="https://twitter.com/vitalekj">@vitalekj</a></li>
+<li>Chris Dzombak: <a href="https://twitter.com/cdzombak">@cdzombak</a> / <a href="https://www.dzombak.com">dzombak.com</a></li>
+<li>Karsten Rowe: <a href="https://twitter.com/karstenrowe">@karstenrowe</a> / <a href="http://karstenrowe.com">karstenrowe.com</a></li>
+</ul></div></div></div></div></div></div>
+
+        
+
+
+        <!--POST FOOTER-->
+
+        <footer class="article-meta">
+          <div>
+
+            <span class="date"><a href="/episodes/2014/10/26/7-our-first-ever-guest-designing-remotely"><i class="icon-calendar"></i><time class="published" datetime="2014-10-27" itemprop="datePublished">October 27, 2014</time></a></span>
+            <span class="author"><span class="delimiter">/</span><a href="/?author=53b2a03fe4b0dc3e7be767bf" rel="author"><i class="icon-user"></i>Andrew Sardone</a></span>
+            
+            
+            
+
+            <div class="shareLoveButtons">
+              
+              
+  <span class="sqs-simple-like" data-item-id="544d5590e4b0023e704b37e2" data-like-count="4">
+    <span class="like-icon"></span>
+    <span class="like-count"></span>
+  </span>
+
+
+              <span class="squarespace-social-buttons inline-style" data-system-data-id="1414412258329-FQSOYBSTLAT8XYL9JALO" data-asset-url="http://static1.squarespace.com/static/53b21b31e4b0f645fc35c713/53b21e6de4b03e6e240441cb/544d5590e4b0023e704b37e2/1414412386168/" data-record-type="1" data-full-url="/episodes/2014/10/26/7-our-first-ever-guest-designing-remotely" data-title="7: Our first ever guest, designing remotely"></span>
+            </div>
+
+          	<!-- <div class="post-entry-injection"></div> -->
+            
+
+          </div>
+        </footer>
+
+  	</div> <!-- / post -->
+
+    </div><!-- / content-wrapper -->
+  </article>
+
+
+
+  <article class="hentry author-andrew-sardone post-type-text article-index-2" id="article-5443eba0e4b0285d3d39b66d" data-item-id="5443eba0e4b0285d3d39b66d">
+    <div class="content-wrapper">
+
+    <!--SPECIAL CONTENT-->
+      
+
+        
+
+      
+
+      <div class="post">
+
+        <!--POST HEADER-->
+  			<header>
+  				<h1 class="entry-title" data-content-field="title" itemprop="headline"><a href="/episodes/2014/10/19/6-unfulfilled-promises">6: Unfulfilled Promises</a></h1>
+
+          <div class="article-meta-top">
+            
+            <span class="date"><a href="/episodes/2014/10/19/6-unfulfilled-promises"><time class="published" datetime="2014-10-20" itemprop="datePublished">October 20, 2014</time></a></span>
+             <span class="author"><a href="/?author=53b2a03fe4b0dc3e7be767bf" rel="author">by Andrew Sardone</a></span>
+            
+          </div>
+
+
+  			</header>
+
+        <!--POST BODY-->
+
+        
+
+        <div class="body entry-content"><div class="sqs-layout sqs-grid-12 columns-12" data-layout-label="Post Body" data-type="item" data-updated-on="1413737392402" id="item-5443eba0e4b0285d3d39b66d"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block markdown-block sqs-block-markdown" data-block-type="44" id="block-4def903c7292e5706b80"><div class="sqs-block-content"><p>Chris has an announcement, followed by a quick discussion about OS X Yosemite and iOS 8. From there, Andrew, Chris, and Kevin go back and forth on Promises and why they’re an insufficient abstraction.</p></div></div><div class="sqs-block audio-block sqs-block-audio" data-block-type="41" id="block-yui_3_17_2_4_1413752357486_4386"><div class="sqs-block-content"><div class="sqs-audio-embed"
+     data-url="http://static1.squarespace.com/static/53b21b31e4b0f645fc35c713/t/54442801e4b0562009729ad0/1413752833287/codeoptional006.mp3/original/codeoptional006.mp3"
+     data-mime-type=""
+     data-title="6: Unfulfilled Promises"
+     data-author="Code Optional"
+     data-show-download="true"
+     data-design-style="minimal"
+     data-duration-in-ms="3270000"
+     data-color-theme="dark">
+</div>
+</div></div><div class="sqs-block markdown-block sqs-block-markdown" data-block-type="44" id="block-yui_3_17_2_4_1413752357486_6976"><div class="sqs-block-content"><h3 id="shownotes">Show notes</h3>
+
+<ul>
+<li><a href="http://www.imore.com/yosemite-gm-3-or-public-beta-6-and-wondering-how-update-final-release">OS X Yosemite GM3/PB6 vs. final build</a></li>
+<li><a href="https://www.apple.com/osx/continuity/">Continuity</a></li>
+<li><a href="http://9to5mac.com/2014/09/23/peer-to-peer-airplay-apple-tv-ios-8/">Peer-to-peer AirPlay</a></li>
+<li><a href="https://people.mozilla.org/~jorendorff/es6-draft.html#sec-promise-objects">ECMAScript Promises</a></li>
+<li><a href="https://promisesaplus.com">Promises/A+</a></li>
+<li><a href="http://martinfowler.com/bliki/Lambda.html">Lambdas</a></li>
+<li><a href="http://callbackhell.com">Callback Hell</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Futures_and_promises">Futures and promises</a></li>
+<li><a href="http://promisekit.org">PromiseKit</a></li>
+<li><a href="https://twitter.com/mxcl/status/523122216859615232">@mxcl: PromiseKit ObjC/Swift parity</a></li>
+<li><a href="https://github.com/BoltsFramework/Bolts-iOS">Bolts-iOS</a></li>
+<li><a href="https://github.com/mxcl/PromiseKit/blob/master/objc/UIAlertView%2BPromiseKit.m">UIAlertView+PromiseKit</a></li>
+<li><a href="https://github.com/ReactiveCocoa/ReactiveCocoa/blob/master/Documentation/FrameworkOverview.md#streams">Streams and Signals</a> (documentation from ReactiveCocoa)</li>
+<li><a href="https://github.com/ReactiveCocoa/ReactiveCocoa">ReactiveCocoa</a></li>
+<li><a href="https://github.com/ReactiveX/RxJava">RxJava</a></li>
+<li><a href="https://github.com/ReactiveX/RxJava/wiki/The-RxJava-Android-Module">RxJava-Android</a></li>
+<li><a href="https://github.com/baconjs/bacon.js/">bacon.js</a></li>
+<li><a href="https://github.com/Reactive-Extensions/RxJS">RxJS</a></li>
+<li><a href="http://www.codemash.org/accepted-session-list/">Andrew's CodeMash 2015 talk: Be proactive, use reactive!</a> (<code>⌘F</code> “Sardone”)</li>
+</ul>
+
+<h3 id="findusonline">Find us online</h3>
+
+<ul>
+<li>Andrew Sardone: <a href="https://twitter.com/andrewa2">@andrewa2</a> / <a href="http://andrewsardone.com">andrewsardone.com</a></li>
+<li>Kevin Vitale: <a href="https://twitter.com/vitalekj">@vitalekj</a></li>
+<li>Chris Dzombak: <a href="https://twitter.com/cdzombak">@cdzombak</a> / <a href="https://www.dzombak.com">dzombak.com</a></li>
+</ul></div></div></div></div></div></div>
+
+        
+
+
+        <!--POST FOOTER-->
+
+        <footer class="article-meta">
+          <div>
+
+            <span class="date"><a href="/episodes/2014/10/19/6-unfulfilled-promises"><i class="icon-calendar"></i><time class="published" datetime="2014-10-20" itemprop="datePublished">October 20, 2014</time></a></span>
+            <span class="author"><span class="delimiter">/</span><a href="/?author=53b2a03fe4b0dc3e7be767bf" rel="author"><i class="icon-user"></i>Andrew Sardone</a></span>
+            
+            
+            
+
+            <div class="shareLoveButtons">
+              
+              
+  <span class="sqs-simple-like" data-item-id="5443eba0e4b0285d3d39b66d" data-like-count="3">
+    <span class="like-icon"></span>
+    <span class="like-count"></span>
+  </span>
+
+
+              <span class="squarespace-social-buttons inline-style" data-system-data-id="1413753268357-WH7V564YSHRF9VTFMYGW" data-asset-url="http://static1.squarespace.com/static/53b21b31e4b0f645fc35c713/53b21e6de4b03e6e240441cb/5443eba0e4b0285d3d39b66d/1413811696094/" data-record-type="1" data-full-url="/episodes/2014/10/19/6-unfulfilled-promises" data-title="6: Unfulfilled Promises"></span>
+            </div>
+
+          	<!-- <div class="post-entry-injection"></div> -->
+            
+
+          </div>
+        </footer>
+
+  	</div> <!-- / post -->
+
+    </div><!-- / content-wrapper -->
+  </article>
+
+
+
+  <article class="hentry author-andrew-sardone post-type-text article-index-3" id="article-53fea5ffe4b08a7417f262ec" data-item-id="53fea5ffe4b08a7417f262ec">
+    <div class="content-wrapper">
+
+    <!--SPECIAL CONTENT-->
+      
+
+        
+
+      
+
+      <div class="post">
+
+        <!--POST HEADER-->
+  			<header>
+  				<h1 class="entry-title" data-content-field="title" itemprop="headline"><a href="/episodes/4">4: We did talk about Core Data!</a></h1>
+
+          <div class="article-meta-top">
+            <div class="location"></div>
+            <span class="date"><a href="/episodes/4"><time class="published" datetime="2014-08-29" itemprop="datePublished">August 29, 2014</time></a></span>
+             <span class="author"><a href="/?author=53b2a03fe4b0dc3e7be767bf" rel="author">by Andrew Sardone</a></span>
+            
+          </div>
+
+
+  			</header>
+
+        <!--POST BODY-->
+
+        
+
+        <div class="body entry-content"><div class="sqs-layout sqs-grid-12 columns-12" data-layout-label="Post Body" data-type="item" data-updated-on="1409197600564" id="item-53fea5ffe4b08a7417f262ec"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block markdown-block sqs-block-markdown" data-block-type="44" id="block-956f6eafa2f9ee352285"><div class="sqs-block-content"><p>On this episode, Kevin throws in a big announcement, followed by a group discussion on Swift’s nil coalescing operator and the common applications of Core Data.</p></div></div><div class="sqs-block audio-block sqs-block-audio" data-block-type="41" id="block-yui_3_17_2_1_1409323734582_12011"><div class="sqs-block-content"><div class="sqs-audio-embed"
+     data-url="http://static1.squarespace.com/static/53b21b31e4b0f645fc35c713/t/5400a9a1e4b02382a032507e/1409329569536/codeoptional004.mp3/original/codeoptional004.mp3"
+     data-mime-type=""
+     data-title="4: We did talk about Core Data!"
+     data-author="Code Optional"
+     data-show-download="true"
+     data-design-style="minimal"
+     data-duration-in-ms="3463000"
+     data-color-theme="dark">
+</div>
+</div></div><div class="sqs-block markdown-block sqs-block-markdown" data-block-type="44" id="block-yui_3_17_2_1_1413752357486_48504"><div class="sqs-block-content"><h3 id="shownotes">Show notes</h3>
+
+<ul>
+<li>Quick shout out to <a href="http://nutshell.com">Nutshell</a>, an awesome start-up that's building a modern cloud-based <a href="http://en.m.wikipedia.org/wiki/Customer_relationship_management">CRM</a></li>
+<li>The <a href="https://twitter.com/vitalekj/status/496356708021981184">“what what”</a>, nil coalescing operator (<a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/BasicOperators.html#//apple_ref/doc/uid/TP40014097-CH6-XID_124">Docs</a>)</li>
+<li>Other Swift optional sugar: <a href="https://developer.apple.com/library/prerelease/mac/documentation/Swift/Conceptual/Swift_Programming_Language/OptionalChaining.html">Optional chaining</a></li>
+<li><a href="http://airspeedvelocity.net/2014/08/04/changes-in-the-swift-standard-library-in-beta-5/">Changes in the Swift standard library for beta 5</a></li>
+<li><a href="https://developer.apple.com/library/prerelease/ios/documentation/CloudKit/Reference/CloudKit_Framework_Reference/">CloudKit</a></li>
+<li><a href="http://www.cimgf.com/2014/01/01/fetched-properties-useful/">Fetched Properties; Useful?</a></li>
+<li><a href="https://gist.github.com/KevinVitale/9819593">Kevin’s seriously singleton gist</a></li>
+<li>Core Data
+<ul><li>Apple’s <a href="https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CoreData/cdProgrammingGuide.html">Introduction to Core Data Programming Guide</a></li>
+<li><a href="https://www.youtube.com/watch?v=Du8ggtwNTaM&amp;index=4&amp;list=PLdr22uU_wISq-xmSdu1QQ4OJxr68qnJ54">UIKonf, Matthew Morey on High Perf CoreData</a></li>
+<li><a href="https://github.com/magicalpanda/MagicalRecord">MagicalRecord</a> – an ActiveRecord-style Core Data library</li></ul></li>
+<li>Non-Core Data
+<ul><li><a href="https://github.com/ccgus/fmdb">FMDB</a> – the best way to use SQLite from Objective-C</li>
+<li><a href="https://github.com/yaptv/YapDatabase">YapDatabase</a> – a “key/value store and MUCH MORE”</li>
+<li><a href="https://github.com/marcoarment/FCModel">FCModel</a> – An alternative to Core Data for people who like having direct SQL access.</li>
+<li><a href="https://github.com/mantle/mantle">Mantle</a> – a Cocoa model framework that’s especially designed to work in tandem with an HTTP API (note, it can be used <em>with</em> Core Data)</li></ul></li>
+<li>Core Data Concurrency: <a href="https://developer.apple.com/library/ios/documentation/cocoa/conceptual/coredata/Articles/cdConcurrency.html">Core Data Programming Guide</a> and <a href="http://www.objc.io/issue-2/common-background-practices.html">objc.io post</a></li>
+<li><a href="http://en.wikipedia.org/wiki/SOLID_(object-oriented_design">SOLID</a> (object-oriented design)
+<ul><li><a href="http://en.wikipedia.org/wiki/Dependency_inversion_principle">Dependency inversion principle</a></li>
+<li><a href="https://twitter.com/Colin_Campbell/status/293167951132098560">Massive View Controllers</a></li></ul></li>
+<li><a href="https://www.facebook.com/groups/nscoders/">NSCoders Facebook group</a></li>
+<li><a href="http://edgecasesshow.com/095-conflict-free-replicated-data-types.html">Conflict-free replicated data types</a></li>
+<li>Contact us
+<ul><li><a href="https://twitter.com/andrewa2">@andrewa2</a></li>
+<li><a href="https://twitter.com/vitalekj">@vitalekj</a></li>
+<li><a href="https://twitter.com/cdzombak">@cdzombak</a></li></ul></li>
+</ul></div></div></div></div></div></div>
+
+        
+
+
+        <!--POST FOOTER-->
+
+        <footer class="article-meta">
+          <div>
+
+            <span class="date"><a href="/episodes/4"><i class="icon-calendar"></i><time class="published" datetime="2014-08-29" itemprop="datePublished">August 29, 2014</time></a></span>
+            <span class="author"><span class="delimiter">/</span><a href="/?author=53b2a03fe4b0dc3e7be767bf" rel="author"><i class="icon-user"></i>Andrew Sardone</a></span>
+            
+            
+            
+
+            <div class="shareLoveButtons">
+              
+              
+  <span class="sqs-simple-like" data-item-id="53fea5ffe4b08a7417f262ec" data-like-count="2">
+    <span class="like-icon"></span>
+    <span class="like-count"></span>
+  </span>
+
+
+              <span class="squarespace-social-buttons inline-style" data-system-data-id="1409344435486-JUTG4AQNS0E9OREI6W1A" data-asset-url="http://static1.squarespace.com/static/53b21b31e4b0f645fc35c713/53b21e6de4b03e6e240441cb/53fea5ffe4b08a7417f262ec/1413753410758/codeoptional.png" data-record-type="1" data-full-url="/episodes/4" data-title="4: We did talk about Core Data!"></span>
+            </div>
+
+          	<!-- <div class="post-entry-injection"></div> -->
+            
+
+          </div>
+        </footer>
+
+  	</div> <!-- / post -->
+
+    </div><!-- / content-wrapper -->
+  </article>
+
+
+
+  <article class="hentry author-chris-dzombak post-type-text article-index-4" id="article-53d55ba7e4b0b38230c95416" data-item-id="53d55ba7e4b0b38230c95416">
+    <div class="content-wrapper">
+
+    <!--SPECIAL CONTENT-->
+      
+
+        
+
+      
+
+      <div class="post">
+
+        <!--POST HEADER-->
+  			<header>
+  				<h1 class="entry-title" data-content-field="title" itemprop="headline"><a href="/episodes/2014/7/27/3-so-we-didnt-talk-about-core-data">3: So we didn’t talk about Core Data</a></h1>
+
+          <div class="article-meta-top">
+            <div class="location"></div>
+            <span class="date"><a href="/episodes/2014/7/27/3-so-we-didnt-talk-about-core-data"><time class="published" datetime="2014-07-27" itemprop="datePublished">July 27, 2014</time></a></span>
+             <span class="author"><a href="/?author=53b21b2ee4b031b5b464e48b" rel="author">by Chris Dzombak</a></span>
+            
+          </div>
+
+
+  			</header>
+
+        <!--POST BODY-->
+
+        
+
+        <div class="body entry-content"><div class="sqs-layout sqs-grid-12 columns-12" data-layout-label="Post Body" data-type="item" data-updated-on="1406492928514" id="item-53d55ba7e4b0b38230c95416"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block markdown-block sqs-block-markdown" data-block-type="44" id="block-5242109dd3b221313ab3"><div class="sqs-block-content"><p>Andrew, Kevin, and Chris plan to talk about Core Data. Instead, they discuss navigation patterns for iOS apps.</p></div></div><div class="sqs-block audio-block sqs-block-audio" data-block-type="41" id="block-yui_3_17_2_1_1406491321491_21288"><div class="sqs-block-content"><div class="sqs-audio-embed"
+     data-url="http://static1.squarespace.com/static/53b21b31e4b0f645fc35c713/t/53d56203e4b0a17d2e04ad50/1406493187797/codeoptional003.mp3/original/codeoptional003.mp3"
+     data-mime-type=""
+     data-title="3: So we didn’t talk about Core Data"
+     data-author="Code Optional"
+     data-show-download="true"
+     data-design-style="minimal"
+     data-duration-in-ms="2746000"
+     data-color-theme="dark">
+</div>
+</div></div><div class="sqs-block markdown-block sqs-block-markdown" data-block-type="44" id="block-yui_3_17_2_1_1406491321491_29125"><div class="sqs-block-content"><h3 id="shownotes">Show notes</h3>
+
+<ul>
+<li><a href="http://googledrive.blogspot.com/2014/04/docssheetsapps.html">New Google Docs/Sheets/Slides apps</a></li>
+<li><a href="http://blog.path.com/post/76264291404/path-for-ios-7">Path</a></li>
+<li><a href="http://1writerapp.com">1Writer</a></li>
+<li><a href="http://asciiwwdc.com/2014/sessions/211">WWDC Session 211, which mentions hamburger menus</a></li>
+<li><a href="https://twitter.com/cdzombak/statuses/241033808026148865?tw_i=241033808026148865&amp;tw_e=details&amp;tw_p=archive">Chris complaining about the “more” button</a></li>
+<li><a href="http://tapbots.com/software/tweetbot/">Tweetbot</a></li>
+<li><a href="http://www.shiftyjelly.com/pocketcasts">Pocket Casts</a></li>
+<li><a href="http://reederapp.com/ios/">Reeder</a></li>
+<li><a href="https://developer.apple.com/swift/blog/">Swift Blog</a></li>
+<li><a href="http://www.reddit.com/r/swift/comments/29kswq/follow_apples_comments_in_developertools/">Apple employees to follow on the Apple Dev Forums</a></li>
+<li>Find us online at… 
+<ul><li><a href="http://twitter.com/andrewa2">@andrewa2</a></li>
+<li><a href="https://twitter.com/cdzombak">@cdzombak</a> / <a href="http://dzombak.com">dzombak.com</a></li>
+<li><a href="https://twitter.com/vitalekj">@vitalekj</a></li></ul></li>
+</ul></div></div><div class="sqs-block image-block sqs-block-image" data-block-type="5" id="block-yui_3_17_2_1_1406491321491_33056"><div class="sqs-block-content">
+	<div class="image-block-outer-wrapper layout-caption-below ">
+	
+		<div class="intrinsic" style="max-width:404.0px;">
+			
+				<div style="padding-bottom:177.7227783203125%;" class="image-block-wrapper   " data-description="&lt;p&gt;The Overcast UI&lt;/p&gt;" >
+					<noscript><img src="http://static1.squarespace.com/static/53b21b31e4b0f645fc35c713/t/53d560f8e4b0000000405c70/1406493004476/overcast.gif"  alt="The Overcast UI"  /></noscript><img class="thumb-image" alt="The Overcast UI" data-src="http://static1.squarespace.com/static/53b21b31e4b0f645fc35c713/t/53d560f8e4b0000000405c70/1406493004476/overcast.gif" data-image="http://static1.squarespace.com/static/53b21b31e4b0f645fc35c713/t/53d560f8e4b0000000405c70/1406493004476/overcast.gif" data-image-dimensions="404x718" data-image-focal-point="0.5,0.5" data-load="false" data-image-id="53d560f8e4b0000000405c70" data-type="image" />
+				</div>
+			
+
+			
+			<div class="image-caption-wrapper">
+				<div class="image-caption"><p>The Overcast UI</p></div>
+			</div>
+			
+
+		</div>
+	
+	</div>
+
+</div></div></div></div></div></div>
+
+        
+
+
+        <!--POST FOOTER-->
+
+        <footer class="article-meta">
+          <div>
+
+            <span class="date"><a href="/episodes/2014/7/27/3-so-we-didnt-talk-about-core-data"><i class="icon-calendar"></i><time class="published" datetime="2014-07-27" itemprop="datePublished">July 27, 2014</time></a></span>
+            <span class="author"><span class="delimiter">/</span><a href="/?author=53b21b2ee4b031b5b464e48b" rel="author"><i class="icon-user"></i>Chris Dzombak</a></span>
+            
+            
+            
+
+            <div class="shareLoveButtons">
+              
+              
+  <span class="sqs-simple-like" data-item-id="53d55ba7e4b0b38230c95416" data-like-count="5">
+    <span class="like-icon"></span>
+    <span class="like-count"></span>
+  </span>
+
+
+              <span class="squarespace-social-buttons inline-style" data-system-data-id="1406491590056-O2H20BK61MM2CK9EI8PP" data-asset-url="http://static1.squarespace.com/static/53b21b31e4b0f645fc35c713/53b21e6de4b03e6e240441cb/53d55ba7e4b0b38230c95416/1413753445974/" data-record-type="1" data-full-url="/episodes/2014/7/27/3-so-we-didnt-talk-about-core-data" data-title="3: So we didn’t talk about Core Data"></span>
+            </div>
+
+          	<!-- <div class="post-entry-injection"></div> -->
+            
+
+          </div>
+        </footer>
+
+  	</div> <!-- / post -->
+
+    </div><!-- / content-wrapper -->
+  </article>
+
+
+
+  <article class="hentry author-andrew-sardone post-type-text article-index-5" id="article-53cfa3abe4b0e5d4e6c1a640" data-item-id="53cfa3abe4b0e5d4e6c1a640">
+    <div class="content-wrapper">
+
+    <!--SPECIAL CONTENT-->
+      
+
+        
+
+      
+
+      <div class="post">
+
+        <!--POST HEADER-->
+  			<header>
+  				<h1 class="entry-title" data-content-field="title" itemprop="headline"><a href="/episodes/2">2: Frameworks, you guys don’t even know how many sunshine and rainbows</a></h1>
+
+          <div class="article-meta-top">
+            <div class="location"></div>
+            <span class="date"><a href="/episodes/2"><time class="published" datetime="2014-07-23" itemprop="datePublished">July 23, 2014</time></a></span>
+             <span class="author"><a href="/?author=53b2a03fe4b0dc3e7be767bf" rel="author">by Andrew Sardone</a></span>
+            
+          </div>
+
+
+  			</header>
+
+        <!--POST BODY-->
+
+        
+
+        <div class="body entry-content"><div class="sqs-layout sqs-grid-12 columns-12" data-layout-label="Post Body" data-type="item" data-updated-on="1406116722702" id="item-53cfa3abe4b0e5d4e6c1a640"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block markdown-block sqs-block-markdown" data-block-type="44" id="block-yui_3_17_2_1_1406116686536_14200"><div class="sqs-block-content"><p>Andrew, Chris, and Kevin sit down for a chat on “Google becoming Apple” (or so Kevin says), and how dynamic frameworks for third party developers will replace CocoaPods (or so Kevin says).</p></div></div><div class="sqs-block audio-block sqs-block-audio" data-block-type="41" id="block-yui_3_17_2_1_1406117664448_36824"><div class="sqs-block-content"><div class="sqs-audio-embed"
+     data-url="http://static1.squarespace.com/static/53b21b31e4b0f645fc35c713/t/53cfb66ee4b04d5b97d14cdb/1406121582078/codeoptional002.mp3/original/codeoptional002.mp3"
+     data-mime-type=""
+     data-title="2: Frameworks, you guys don’t even know how many sunshine and rainbows"
+     data-author="Code Optional"
+     data-show-download="true"
+     data-design-style="minimal"
+     data-duration-in-ms="3661000"
+     data-color-theme="dark">
+</div>
+</div></div><div class="sqs-block markdown-block sqs-block-markdown" data-block-type="44" id="block-yui_3_17_2_1_1406117664448_36897"><div class="sqs-block-content"><h3 id="shownotes">Show notes</h3>
+
+<ul>
+<li><a href="http://www.engadget.com/2014/06/25/google-to-bring-android-apps-to-the-chromebook/">Android apps on Chromebooks</a></li>
+<li>NSHipster <a href="http://nshipster.com/nscalendarunityear/">article</a> mentions UIBezierPath and operator overloading</li>
+<li>Swift arrays in <a href="https://github.com/andrewsardone/swift-playground/issues/2#issue-34921587">beta 1 and 2</a> vs. <a href="https://github.com/andrewsardone/swift-playground/issues/2#issuecomment-48210232">beta 3</a>
+<ul><li>Mike Ash’s <a href="https://mikeash.com/pyblog/friday-qa-2014-06-20-interesting-swift-features.html">Swift features blog post</a> and <a href="https://mikeash.com/pyblog/friday-qa-2014-06-20-interesting-swift-features.html#comment-2ba71511053a8017a556bc4ef9c091fa">Chris Lattner’s arrays comment</a></li></ul></li>
+<li><a href="https://devforums.apple.com/message/1000934#1000934">Allowed characters</a> in Swift operators.</li>
+<li>Frameworks 
+<ul><li>Xcode 6’s <a href="https://developer.apple.com/library/prerelease/ios/documentation/DeveloperTools/Conceptual/WhatsNewXcode/Articles/xcode_6_0.html#//apple_ref/doc/uid/TP40014509-SW14">dynamic frameworks on iOS</a></li>
+<li><a href="http://landonf.bikemonkey.org/code/iphone/iPhone_Framework_Support.20081202.html">Shipping Libraries on iOS</a> (2008)</li>
+<li><a href="http://landonf.bikemonkey.org/code/ios/Radar_15800975_iOS_Frameworks.20140112.html">Static Libraries are Really, Really Bad</a> (2014)</li></ul></li>
+<li><a href="http://cocoapods.org/">CocoaPods</a>
+<ul><li>Upcoming <a href="http://blog.cocoapods.org/Stripe-Open-Source-Retreat/">CocoaPods’ dependency resolver</a></li></ul></li>
+<li>Find us online at… 
+<ul><li><a href="http://twitter.com/andrewa2">@andrewa2</a></li>
+<li><a href="https://twitter.com/cdzombak">@cdzombak</a></li>
+<li><a href="https://twitter.com/vitalekj">@vitalekj</a></li></ul></li>
+</ul></div></div></div></div></div></div>
+
+        
+
+
+        <!--POST FOOTER-->
+
+        <footer class="article-meta">
+          <div>
+
+            <span class="date"><a href="/episodes/2"><i class="icon-calendar"></i><time class="published" datetime="2014-07-23" itemprop="datePublished">July 23, 2014</time></a></span>
+            <span class="author"><span class="delimiter">/</span><a href="/?author=53b2a03fe4b0dc3e7be767bf" rel="author"><i class="icon-user"></i>Andrew Sardone</a></span>
+            
+            
+            
+
+            <div class="shareLoveButtons">
+              
+              
+  <span class="sqs-simple-like" data-item-id="53cfa3abe4b0e5d4e6c1a640" data-like-count="5">
+    <span class="like-icon"></span>
+    <span class="like-count"></span>
+  </span>
+
+
+              <span class="squarespace-social-buttons inline-style" data-system-data-id="1406148524054-IQRW5SPH5VMMICB84X9O" data-asset-url="http://static1.squarespace.com/static/53b21b31e4b0f645fc35c713/53b21e6de4b03e6e240441cb/53cfa3abe4b0e5d4e6c1a640/1413753475290/" data-record-type="1" data-full-url="/episodes/2" data-title="2: Frameworks, you guys don’t even know how many sunshine and rainbows"></span>
+            </div>
+
+          	<!-- <div class="post-entry-injection"></div> -->
+            
+
+          </div>
+        </footer>
+
+  	</div> <!-- / post -->
+
+    </div><!-- / content-wrapper -->
+  </article>
+
+
+
+  <article class="hentry author-andrew-sardone post-type-text article-index-6" id="article-53b8680ee4b0d05c568743e2" data-item-id="53b8680ee4b0d05c568743e2">
+    <div class="content-wrapper">
+
+    <!--SPECIAL CONTENT-->
+      
+
+        
+
+      
+
+      <div class="post">
+
+        <!--POST HEADER-->
+  			<header>
+  				<h1 class="entry-title" data-content-field="title" itemprop="headline"><a href="/episodes/1">1: We started this new project in Swift</a></h1>
+
+          <div class="article-meta-top">
+            <div class="location"></div>
+            <span class="date"><a href="/episodes/1"><time class="published" datetime="2014-07-05" itemprop="datePublished">July 05, 2014</time></a></span>
+             <span class="author"><a href="/?author=53b2a03fe4b0dc3e7be767bf" rel="author">by Andrew Sardone</a></span>
+            
+          </div>
+
+
+  			</header>
+
+        <!--POST BODY-->
+
+        
+
+        <div class="body entry-content"><div class="sqs-layout sqs-grid-12 columns-12" data-layout-label="Post Body" data-type="item" data-updated-on="1404651882559" id="item-53b8680ee4b0d05c568743e2"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block markdown-block sqs-block-markdown" data-block-type="44" id="block-6c1792380d5b754030f9"><div class="sqs-block-content"><p>Andrew, Chris, and Kevin sit down for their inaugural chat, scratching the surface of Swift.</p></div></div><div class="sqs-block audio-block sqs-block-audio" data-block-type="41" id="block-yui_3_17_2_1_1404598018006_26941"><div class="sqs-block-content"><div class="sqs-audio-embed"
+     data-url="http://static1.squarespace.com/static/53b21b31e4b0f645fc35c713/t/53b88053e4b00ce9a7c47ba8/1404600403721/codeoptional001.mp3/original/codeoptional001.mp3"
+     data-mime-type=""
+     data-title="1: We started this new project in Swift"
+     data-author="Code Optional"
+     data-show-download="true"
+     data-design-style="minimal"
+     data-duration-in-ms="2656000"
+     data-color-theme="dark">
+</div>
+</div></div><div class="sqs-block markdown-block sqs-block-markdown" data-block-type="44" id="block-yui_3_17_2_1_1404662352250_31327"><div class="sqs-block-content"><h3 id="shownotes">Show notes</h3>
+
+<ul>
+<li>John Siracusa’s <a href="http://arstechnica.com/staff/2005/09/1372/">Copland 2010</a> <a href="http://arstechnica.com/apple/2010/06/copland-2010-revisited/">articles</a></li>
+<li><a href="https://github.com/robb/Cartography">Cartography</a> – the Auto layout constraint operator overloading libray mentioned by Chris</li>
+<li><a href="https://twitter.com/futurepaul/status/473902211463118848">Noah’s ark in Swift</a></li>
+<li>Operator overloading for FoundationKit – <a href="https://github.com/jednymslowem/FoundationOperators">jednymslowem/FoundationOperators</a>
+<ul><li>We can <em>finally</em> get <code>NSNumber + NSNumber</code>!</li></ul></li>
+<li><a href="https://dayone.me/mVYz31">Andrew has no idea what he’s doing</a></li>
+<li>Find us online at… 
+<ul><li><a href="http://twitter.com/andrewa2">@andrewa2</a></li>
+<li><a href="https://twitter.com/cdzombak">@cdzombak</a></li>
+<li><a href="https://twitter.com/vitalekj">@vitalekj</a></li></ul></li>
+</ul></div></div></div></div></div></div>
+
+        
+
+
+        <!--POST FOOTER-->
+
+        <footer class="article-meta">
+          <div>
+
+            <span class="date"><a href="/episodes/1"><i class="icon-calendar"></i><time class="published" datetime="2014-07-05" itemprop="datePublished">July 05, 2014</time></a></span>
+            <span class="author"><span class="delimiter">/</span><a href="/?author=53b2a03fe4b0dc3e7be767bf" rel="author"><i class="icon-user"></i>Andrew Sardone</a></span>
+            
+            
+            
+
+            <div class="shareLoveButtons">
+              
+              
+  <span class="sqs-simple-like" data-item-id="53b8680ee4b0d05c568743e2" data-like-count="8">
+    <span class="like-icon"></span>
+    <span class="like-count"></span>
+  </span>
+
+
+              <span class="squarespace-social-buttons inline-style" data-system-data-id="1404598269995-Q3ELI5C377M7DAGFMU9A" data-asset-url="http://static1.squarespace.com/static/53b21b31e4b0f645fc35c713/53b21e6de4b03e6e240441cb/53b8680ee4b0d05c568743e2/1413753499676/codeoptional.png" data-record-type="1" data-full-url="/episodes/1" data-title="1: We started this new project in Swift"></span>
+            </div>
+
+          	<!-- <div class="post-entry-injection"></div> -->
+            
+
+          </div>
+        </footer>
+
+  	</div> <!-- / post -->
+
+    </div><!-- / content-wrapper -->
+  </article>
+
+
+
+<!--PAGINATION-->
+				</section>
+			</div><!-- / pageWrapper -->
+
+			<div id="footerWrapper">
+				<footer id="footer">
+			   
+					  
+					    <div id="sqs-social" class="social-links sqs-svg-icon--list" data-content-field="connected-accounts">
+					      
+			          <a href="https://twitter.com/codeoptional" target="_blank" class="sqs-svg-icon--wrapper twitter" style="">
+			            <div>
+			              <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
+			                <use class="sqs-use--background" xlink:href="/universal/svg/social-accounts.svg#background"></use>
+			                <use class="sqs-use--icon" xlink:href="/universal/svg/social-accounts.svg#twitter-icon"></use>
+			                <use class="sqs-use--mask" xlink:href="/universal/svg/social-accounts.svg#twitter-mask"></use>
+			              </svg>
+			            </div>
+			          </a>
+			          
+					    </div>
+					  
+					
+					<div class="sqs-layout sqs-grid-12 columns-12" data-layout-label="Footer Content" data-type="block-field" data-updated-on="1409589913861" id="footerBlock"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-b4c586d9d5f1be28bd21"><div class="sqs-block-content"><p class="text-align-center"><a href="https://itunes.apple.com/us/podcast/code-optional/id896390699">iTunes</a> • <a href="http://www.codeoptional.com/?format=RSS">RSS</a><span style="font-size:14px">&nbsp;•&nbsp;</span><a href="https://github.com/codeoptional">GitHub</a></p></div></div></div></div></div>
+				</footer>
+			</div><!-- / footerWrapper -->
+
+		</div><!-- / canvas -->
+	</div><!-- / site -->
+
+	<script type="text/javascript" data-sqs-type="imageloader-bootstraper">(function() {if(window.ImageLoader) { window.ImageLoader.bootstrap(); }})();</script>
+<script>Squarespace.afterBodyLoad(Y);</script>
+	<script type="text/javascript" src="https://static1.squarespace.com/static/ta/4f6798afe4b097349e410d49/1562/scripts/combo/?site.js"></script>
+
+	
+
+	</body>
+</html>
