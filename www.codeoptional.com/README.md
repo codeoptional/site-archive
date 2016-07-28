@@ -16,5 +16,17 @@ Remaining files in the archive with `?author=` appended are getting ignored, and
 ## Notes for content adaptation
 
 - Remove author links
+    - search for `class="author"`
 - Most `index.html` references are wget artifacts
     - including `index.html?format=RSS`
+    - search for `index.html`
+- CSS
+- Search for any `static` URLs
+
+## Adaptation
+
+### index.html todo
+
+- CSS
+- search for `static` URLs
+- mirror to `episodes/index.html`, replacing
