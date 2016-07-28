@@ -30,3 +30,30 @@ Remaining files in the archive with `?author=` appended are getting ignored, and
 - CSS
 - search for `static` URLs
 - mirror to `episodes/index.html`, replacing
+
+## nginx
+
+I've been working with this config to try and maintain URLs and content-types:
+
+```
+server {
+    listen 80;
+    server_name codeoptional.com;
+
+    return 301 http://www.codeoptional.com$request_uri;
+}
+
+server {
+    listen       80;
+    server_name  www.codeoptional.com;
+
+    root   /home/cdzombak/www/codeoptional.com/public;
+
+    location / {
+        try_files "${uri}_${args}.rss" "${uri}index.html_${args}.rss" $uri $uri/ $uri/index.html $uri.html;
+    }
+
+    include drop.conf;
+    include caching.conf;
+}
+```
